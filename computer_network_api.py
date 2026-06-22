@@ -450,6 +450,7 @@ async def query_knowledge_base(
 ):
     return rag.process_query(request)
 
+
 @app.get("/health", summary="健康检查接口")
 async def health_check():
     return {"status": "healthy", "timestamp": int(time.time() * 1000)}
